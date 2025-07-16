@@ -1,19 +1,20 @@
 import { useState } from "react";
 import { Header } from "./components/Header";
-import "./css/App.css";
+import { Navigation } from "./components/Navigation";
+import { Home } from "./pages/Home.jsx";
+import { Like } from "./pages/Like.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./css/App.css";
 
 export function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div>
-      <BrowserRouter>
-        <Routes>
-          <Route></Route>
-        </Routes>
-      </BrowserRouter>
+    <BrowserRouter>
       <Header />
-    </div>
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/like" element={<Like />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
