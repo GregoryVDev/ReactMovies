@@ -1,6 +1,5 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { Header } from "./components/Header";
 import "./css/App.css";
 
 export function App() {
@@ -8,7 +7,7 @@ export function App() {
 
   return (
     <div>
-      <h1>Salut</h1>
+      <Header />
     </div>
   );
 }
