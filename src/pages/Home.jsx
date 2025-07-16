@@ -1,1 +1,5 @@
-export const Home = () => null; // ne rend rien du tout
+import { Search } from "../components/Search";
+
+export const Home = () => {
+  return <Search />;
+};
