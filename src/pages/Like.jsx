@@ -1,1 +1,1 @@
-export const Like = () => <h2>Mes coups de cœur</h2>;
+export const Like = () => null; // ne rend rien du tout

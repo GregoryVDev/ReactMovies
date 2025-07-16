@@ -1,7 +1,19 @@
+import { NavLink } from "react-router-dom";
+
 export const Navigation = () => {
   return (
-    <nav>
-      <p>Ici, tu peux ajouter un menu latéral ou un système de filtres.</p>
-    </nav>
+    <div className="navigation">
+      <ul>
+        <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+          <li>Accueil</li>
+        </NavLink>
+        <NavLink
+          to="/like"
+          className={(nav) => (nav.isActive ? "nav-active" : "")}
+        >
+          <li>Coup de coeur</li>
+        </NavLink>
+      </ul>
+    </div>
   );
 };

@@ -1,3 +1,1 @@
-import React from "react";
-
-export const Home = () => <h2>Page d'accueil</h2>;
+export const Home = () => null; // ne rend rien du tout
