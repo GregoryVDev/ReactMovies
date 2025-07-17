@@ -10,6 +10,16 @@ export const Card = () => {
       .then((res) => res.json())
       .then((data) => setMovies(data.results));
   }, []);
+
+  const formatDate = (dateString) => {
+    if (!dateString) return "Date inconnue";
+    const date = new Date(dateString);
+    return new Intl.DateTimeFormat("fr-FR", {
+      year: "numeric",
+      month: "numeric",
+      day: "numeric",
+    }).format(date);
+  };
   return (
     <div className="container-articles">
       {movies.map((film) => (
@@ -19,6 +29,7 @@ export const Card = () => {
             alt={film.original_title}
           />
           <h3>{film.original_title}</h3>
+          <p className="date">Sorti le : {formatDate(film.release_date)}</p>
         </article>
       ))}
     </div>
