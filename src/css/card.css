@@ -9,6 +9,7 @@
 .article-movie {
   flex: 0 1 calc(20% - 20px); /* 5 par ligne avec l’espace du gap */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: #060d2a;
   border-radius: 12px;
   overflow: hidden;
   text-align: center;
@@ -20,10 +21,11 @@
 }
 
 .article-movie img {
-  width: 100%;
+  width: 250px;
   height: auto;
   display: block;
   border-radius: 85px;
+  margin: auto;
 }
 
 .article-movie h3 {
