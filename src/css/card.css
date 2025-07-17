@@ -18,3 +18,14 @@
 .article-movie:hover {
   transform: scale(1.03);
 }
+
+.article-movie img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.article-movie h3 {
+  font-size: 1rem;
+  margin: 10px;
+}
