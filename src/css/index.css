@@ -81,6 +81,8 @@ form input {
   padding: 10px;
   border-radius: 10px;
   width: 300px;
+  margin-bottom: 20px;
+  font-size: 1rem;
 }
 
 h2 {
