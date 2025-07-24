@@ -6,8 +6,12 @@ export const Search = () => {
           <input type="text" placeholder="Entrez le titre d'un film" />
         </form>
         <div className="btn-sort-container">
-          <div className="btn-sort" id="goodToBad"></div>
-          <div className="btn-sort" id="BadToGood"></div>
+          <div className="btn-sort" id="goodToBad">
+            Top<span>➔</span>
+          </div>
+          <div className="btn-sort" id="BadToGood">
+            ➔
+          </div>
         </div>
       </div>
     </div>
