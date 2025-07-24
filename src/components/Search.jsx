@@ -10,7 +10,7 @@ export const Search = () => {
             Top<span>➔</span>
           </div>
           <div className="btn-sort" id="BadToGood">
-            Flop<span>➔</span>
+            <span>➔</span>Flop
           </div>
         </div>
       </div>
