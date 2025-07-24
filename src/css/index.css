@@ -110,3 +110,25 @@ h2 {
   transition: transform 0.2s, background-color 0.2s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+
+.btn-sort#GoodToBad span {
+  display: inline-block;
+  transform: rotate(-90deg);
+}
+
+.btn-sort#BadToGood span {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.btn-sort:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
+
+.result {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  font-weight: bold;
+}
