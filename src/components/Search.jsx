@@ -14,6 +14,7 @@ export const Search = () => {
           </div>
         </div>
       </div>
+      <div className="result">RESULTAT</div>
     </div>
   );
 };
