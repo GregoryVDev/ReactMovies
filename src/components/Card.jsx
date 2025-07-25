@@ -5,7 +5,7 @@ export const Card = () => {
 
   useEffect(() => {
     fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=ed82f4c18f2964e75117c2dc65e2161d&query=code&language=fr-FR`
+      `https://api.themoviedb.org/3/search/movie?api_key=ed82f4c18f2964e75117c2dc65e2161d&query=foot&language=fr-FR`
     )
       .then((res) => res.json())
       .then((data) => setMovies(data.results));
