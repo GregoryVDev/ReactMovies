@@ -25,7 +25,11 @@ export const Card = () => {
       {movies.slice(0, 12).map((film) => (
         <article key={film.id} className="article-movie">
           <img
-            src={`https://image.tmdb.org/t/p/w500${film.poster_path}`}
+            src={
+              film.poster_path
+                ? `https://image.tmdb.org/t/p/w500` + film.poster_path
+                : ""
+            }
             alt={film.original_title}
           />
           <h3>{film.original_title}</h3>
