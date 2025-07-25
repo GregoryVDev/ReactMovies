@@ -22,7 +22,7 @@ export const Card = () => {
   };
   return (
     <div className="container-articles">
-      {movies.map((film) => (
+      {movies.slice(0, 12).map((film) => (
         <article key={film.id} className="article-movie">
           <img
             src={`https://image.tmdb.org/t/p/w500${film.poster_path}`}
