@@ -23,6 +23,11 @@ export const Card = () => {
 
   const genreFinder = () => {
     let genreArray = [];
+    // Permet de faire une boucle afin de récupérer le/les genres du film
+    for (let i = 0; i < film.genre_ids.length; i++) {
+      switch (film.genre_ids[i]) {
+      }
+    }
   };
 
   return (
