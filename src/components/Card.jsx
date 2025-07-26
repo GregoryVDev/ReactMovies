@@ -33,9 +33,13 @@ export const Card = () => {
             alt={film.original_title}
           />
           <h3>{film.original_title}</h3>
-          <p className="date">Sorti le : {formatDate(film.release_date)}</p>
+          {film.release_date ? (
+            <p className="date">Sorti le : {formatDate(film.release_date)}</p>
+          ) : null}
         </article>
       ))}
     </div>
   );
 };
+
+// 40min 27
