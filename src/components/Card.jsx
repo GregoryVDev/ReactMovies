@@ -87,7 +87,11 @@ export const Card = () => {
           break;
       }
     }
-    return genreArray;
+    return genreArray.map((genre) => (
+      <li key={genre} className="moviesGenres">
+        {genre}
+      </li>
+    ));
   };
 
   return (
@@ -109,7 +113,7 @@ export const Card = () => {
           <h4>
             {film.vote_average}/10 <span>⭐​</span>
           </h4>
-          <ul>{film.genre_ids ? genreFinder(film) : null}</ul>
+          <ul className="list">{film.genre_ids ? genreFinder(film) : null}</ul>
         </article>
       ))}
     </div>
