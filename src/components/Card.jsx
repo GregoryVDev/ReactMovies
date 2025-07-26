@@ -87,6 +87,7 @@ export const Card = () => {
           null;
       }
     }
+    return genreArray;
   };
 
   return (
