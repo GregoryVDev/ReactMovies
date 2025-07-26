@@ -20,6 +20,11 @@ export const Card = () => {
       day: "numeric",
     }).format(date);
   };
+
+  const genreFinder = () => {
+    let genreArray = [];
+  };
+
   return (
     <div className="container-articles">
       {movies.slice(0, 12).map((film) => (
