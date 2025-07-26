@@ -36,6 +36,9 @@ export const Card = () => {
           {film.release_date ? (
             <p className="date">Sorti le : {formatDate(film.release_date)}</p>
           ) : null}
+          <h4>
+            {film.vote_average}/10 <span>⭐​</span>
+          </h4>
         </article>
       ))}
     </div>
