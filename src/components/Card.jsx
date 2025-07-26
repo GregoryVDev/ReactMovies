@@ -39,7 +39,7 @@ export const Card = () => {
           genreArray.push("Comédie");
           break;
         case 80:
-          genreArray.push("Crime");
+          genreArray.push("Policier");
           break;
         case 99:
           genreArray.push("Documentaire");
