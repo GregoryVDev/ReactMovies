@@ -21,7 +21,7 @@ export const Card = () => {
     }).format(date);
   };
 
-  const genreFinder = () => {
+  const genreFinder = (film) => {
     let genreArray = [];
     // Permet de faire une boucle afin de récupérer le/les genres du film
     for (let i = 0; i < film.genre_ids.length; i++) {
@@ -84,7 +84,7 @@ export const Card = () => {
           genreArray.push("Western");
           break;
         default:
-          null;
+          break;
       }
     }
     return genreArray;
@@ -109,6 +109,7 @@ export const Card = () => {
           <h4>
             {film.vote_average}/10 <span>⭐​</span>
           </h4>
+          <ul>{film.genre_ids ? genreFinder(film) : null}</ul>
         </article>
       ))}
     </div>
