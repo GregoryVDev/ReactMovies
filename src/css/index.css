@@ -145,3 +145,15 @@ h2 {
   padding: 5px;
   background: #1e1e3e;
 }
+
+.btn-like {
+  width: 200px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #526ee3;
+}
+
+.btn-like:hover {
+  background: #24254b;
+}
