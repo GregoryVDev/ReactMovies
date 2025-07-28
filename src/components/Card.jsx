@@ -115,10 +115,10 @@ export const Card = () => {
             {film.vote_average.toFixed(0)}/10 <span>⭐​</span>
           </h4>
           <ul className="list">{film.genre_ids ? genreFinder(film) : null}</ul>
+          {film.overview ? <h3>Synopsis</h3> : ""}
+          <p>{film.overview}</p>
         </article>
       ))}
     </div>
   );
 };
-
-// 40min 27
