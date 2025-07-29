@@ -116,7 +116,9 @@ export const Card = () => {
           </h4>
           <ul className="list">{film.genre_ids ? genreFinder(film) : null}</ul>
           {film.overview ? <h3>Synopsis</h3> : ""}
-          <p>{film.overview}</p>
+          <p className="synopsis">
+            {film.overview.split(" ").slice(0, 50).join(" ")}
+          </p>
           <div className="btn-like">Ajouter aux coups de coeur</div>
         </article>
       ))}

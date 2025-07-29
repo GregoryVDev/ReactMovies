@@ -158,3 +158,16 @@ h2 {
 .btn-like:hover {
   background: #24254b;
 }
+
+.synopsis {
+  max-height: 150px;
+  overflow-y: auto; /* Si besoin affichage du scroll */
+  padding-right: 5px;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer / Edge */
+}
+
+.synopsis::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
