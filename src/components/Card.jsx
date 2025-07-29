@@ -8,6 +8,7 @@ export const Card = ({ search }) => {
     )
       .then((res) => res.json())
       .then((data) => setMovies(data.results));
+    // Quand la recherche évolue, on relance la requête
   }, [search]);
 
   const formatDate = (dateString) => {
