@@ -3,7 +3,7 @@ import { Card } from "./Card";
 
 export const Search = ({ search, setSearch }) => {
   const [movies, setMovies] = useState([]);
-  const [sortOrder, setSortOrder] = useState("desc"); // "desc" ou "asc"
+  const [sortOrder, setSortOrder] = useState("desc"); // De la meilleure note à la moins bonne
 
   useEffect(() => {
     if (!search) return;
