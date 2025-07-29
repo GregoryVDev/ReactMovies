@@ -37,13 +37,13 @@ export const Search = ({ search, setSearch }) => {
         </form>
         <div className="btn-sort-container">
           <div
-            className="btn-sort BadToGood"
+            className="btn-sort GoodToBad"
             onClick={() => setSortOrder("desc")}
           >
             Top<span>➔</span>
           </div>
           <div
-            className="btn-sort GoodToBad"
+            className="btn-sort BadToGood"
             onClick={() => setSortOrder("asc")}
           >
             <span>➔</span>Flop
