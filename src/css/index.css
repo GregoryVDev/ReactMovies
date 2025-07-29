@@ -111,12 +111,12 @@ h2 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.btn-sort#GoodToBad span {
+.btn-sort.GoodToBad span {
   display: inline-block;
   transform: rotate(-90deg);
 }
 
-.btn-sort#BadToGood span {
+.btn-sort.BadToGood span {
   display: inline-block;
   transform: rotate(90deg);
 }
@@ -135,6 +135,7 @@ h2 {
 
 .list {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   padding-left: 20px;
 }
