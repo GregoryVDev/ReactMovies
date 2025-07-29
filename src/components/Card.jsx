@@ -101,7 +101,7 @@ export const Card = ({ search }) => {
             src={
               film.poster_path
                 ? `https://image.tmdb.org/t/p/w500` + film.poster_path
-                : "../assets/poster.jpg"
+                : "../../public/poster.jpg"
             }
             alt={film.original_title}
           />
