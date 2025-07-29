@@ -82,6 +82,14 @@ export const Card = ({ movies }) => {
     ));
   };
 
+  const addStorage = (movie) => {
+    let storedData = window.localStorage.movie
+      ? window.localStorage.movie.split(",")
+      : [];
+
+    window.localStorage.movie = movie.id;
+  };
+
   return (
     <div className="container-articles">
       {movies.slice(0, 12).map((film) => (
@@ -107,7 +115,9 @@ export const Card = ({ movies }) => {
           <p className="synopsis">
             {film.overview.split(" ").slice(0, 50).join(" ")}
           </p>
-          <div className="btn-like">Ajouter aux coups de coeur</div>
+          <div className="btn-like" onClick={() => addStorage(film)}>
+            Ajouter aux coups de coeur
+          </div>
         </article>
       ))}
     </div>
