@@ -120,7 +120,17 @@ export const Card = ({ movies }) => {
             {/* Retire les chiffres après la virgule pour garder un chiffre entier */}
             {film.vote_average.toFixed(0)}/10 <span>⭐​</span>
           </h4>
-          <ul className="list">{film.genre_ids ? genreFinder(film) : null}</ul>
+
+          <ul className="list">
+            {film.genre_ids
+              ? genreFinder(film)
+              : film.genres.map((genre) => (
+                  <li className="moviesGenres" key={genre}>
+                    {genre.name}
+                  </li>
+                ))}
+          </ul>
+
           {film.overview ? <h3>Synopsis</h3> : ""}
           <p className="synopsis">
             {film.overview.split(" ").slice(0, 50).join(" ")}
