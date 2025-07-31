@@ -93,6 +93,13 @@ export const Card = ({ movies }) => {
     }
   };
 
+  const deleteStorage = (movie) => {
+    // Tous les ID dans un tableau
+    let storedData = window.localStorage.movie.split(",");
+    let newData = storedData.filter((id) => id != movie.id);
+    window.localStorage.movie = newData;
+  };
+
   return (
     <div className="container-articles">
       {movies.slice(0, 12).map((film) => (
