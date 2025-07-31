@@ -123,7 +123,15 @@ export const Card = ({ movies }) => {
               Ajouter aux coups de coeur
             </div>
           ) : (
-            <div className="btn-like">Supprimer de la liste</div>
+            <div
+              className="btn-like"
+              onClick={() => {
+                deleteStorage(film);
+                window.location.reload();
+              }}
+            >
+              Supprimer de la liste
+            </div>
           )}
         </article>
       ))}
