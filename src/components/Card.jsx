@@ -87,7 +87,10 @@ export const Card = ({ movies }) => {
       ? window.localStorage.movie.split(",")
       : [];
 
-    window.localStorage.movie = movie.id;
+    if (!storedData.includes(movie.id.toString())) {
+      storedData.push(movie.id);
+      window.localStorage.movie = storedData;
+    }
   };
 
   return (
