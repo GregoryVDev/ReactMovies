@@ -6,7 +6,8 @@ export const Like = () => {
 
   useEffect(() => {
     let moviesId = window.localStorage.movie
-      ? window.localStorage.movie.split(",")
+      ? // Permet avec .split de transformer la chaine en tableau
+        window.localStorage.movie.split(",")
       : [];
 
     console.log(moviesId);
