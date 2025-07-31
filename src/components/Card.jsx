@@ -109,7 +109,7 @@ export const Card = ({ movies }) => {
           {film.release_date ? (
             <p className="date">Sorti le : {formatDate(film.release_date)}</p>
           ) : null}
-          <h4>
+          <h4 className="average">
             {/* Retire les chiffres après la virgule pour garder un chiffre entier */}
             {film.vote_average.toFixed(0)}/10 <span>⭐​</span>
           </h4>
