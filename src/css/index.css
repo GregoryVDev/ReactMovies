@@ -148,6 +148,7 @@ h2 {
   background-color: #526ee3;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .btn-like:hover {
