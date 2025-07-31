@@ -6,12 +6,14 @@ export const Like = () => {
 
   useEffect(() => {
     let moviesId = window.localStorage.movie ? window.localStorage.movie : [];
+
+    console.log(moviesId);
   }, []);
 
   return (
     <div className="like-page">
       <Header />
-      <h2>Coup de coeur</h2>
+      <h2>Coup de coeur ❤️</h2>
     </div>
   );
 };
