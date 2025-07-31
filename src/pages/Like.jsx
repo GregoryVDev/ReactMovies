@@ -5,7 +5,7 @@ export const Like = () => {
   const [listData, setListData] = useState([]);
 
   useEffect(() => {
-    let moviesId = window.localStorage.movies ? window.localStorage.movies : [];
+    let moviesId = window.localStorage.movie ? window.localStorage.movie : [];
   }, []);
 
   return (
