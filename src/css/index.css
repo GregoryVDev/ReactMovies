@@ -147,6 +147,7 @@ h2 {
   border-radius: 20px;
   background-color: #526ee3;
   display: flex;
+  justify-content: center;
 }
 
 .btn-like:hover {

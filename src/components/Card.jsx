@@ -118,9 +118,13 @@ export const Card = ({ movies }) => {
           <p className="synopsis">
             {film.overview.split(" ").slice(0, 50).join(" ")}
           </p>
-          <div className="btn-like" onClick={() => addStorage(film)}>
-            Ajouter aux coups de coeur
-          </div>
+          {film.genre_ids ? (
+            <div className="btn-like" onClick={() => addStorage(film)}>
+              Ajouter aux coups de coeur
+            </div>
+          ) : (
+            <div className="btn-like">Supprimer de la liste</div>
+          )}
         </article>
       ))}
     </div>
